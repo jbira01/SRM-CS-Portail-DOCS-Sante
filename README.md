@@ -245,7 +245,6 @@ Projet développé par :
 OFPPT
 
 **Haiba Housny**
-
 Étudiante en **2ème année Développement Digital Full-Stack**
 OFPPT
 
@@ -258,6 +257,5 @@ OFPPT
 Projet réalisé dans un cadre **académique et professionnel (stage)**.
 Tous droits réservés à **SRM Casablanca-Settat**.
 
-```
 
 
