@@ -1,59 +1,263 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+````markdown
+# 🏥 Portail Santé Collaborateur CMSS  
+### SRM Casablanca-Settat
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+![Laravel](https://img.shields.io/badge/Laravel-Framework-red?style=for-the-badge&logo=laravel)
+![Filament](https://img.shields.io/badge/Filament-Admin%20Panel-orange?style=for-the-badge)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-Frontend-blue?style=for-the-badge&logo=tailwindcss)
+![PHP](https://img.shields.io/badge/PHP-Backend-777BB4?style=for-the-badge&logo=php)
+![MySQL](https://img.shields.io/badge/MySQL-Database-4479A1?style=for-the-badge&logo=mysql)
 
-## About Laravel
+Application web **Intranet** développée pour les collaborateurs de la **SRM Casablanca-Settat**, permettant un accès rapide aux **documents administratifs de santé** et à un **annuaire médical interactif des prestataires conventionnés**.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+# 📌 À propos
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Ce projet a été réalisé dans le cadre d’un **stage académique** au sein de :
 
-## Learning Laravel
+**SRM Casablanca-Settat**  
+*Société Régionale Multiservices*  
+Division **Études Clientèle Privée**
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+L'objectif du projet est de **faciliter l'accès aux services de santé administratifs pour les collaborateurs** à travers une plateforme interne simple, rapide et intuitive.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Le portail permet notamment :
 
-## Laravel Sponsors
+- le **téléchargement de documents administratifs CMSS**
+- la **consultation d'un annuaire médical**
+- une **gestion administrative complète via un panel d'administration**
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+---
 
-### Premium Partners
+# 🚀 Fonctionnalités
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+## 👨‍💻 Front-Office (Espace Collaborateur)
 
-## Contributing
+Interface destinée aux **employés de la SRM**.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+✨ Fonctionnalités principales :
 
-## Code of Conduct
+- 🎨 **Design moderne et responsive**
+  - Couleurs officielles SRM  
+  - Bleu `#2D9BD6`  
+  - Orange `#F19740`
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+- 📄 **Téléchargement de documents administratifs**
+  - Bulletins d’adhésion
+  - Déclarations de perte
+  - Autres documents CMSS
+  - Formats : **PDF / Word**
 
-## Security Vulnerabilities
+- 🏥 **Annuaire médical interactif**
+  organisé en **5 catégories** :
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+  - Cliniques
+  - Médecins conventionnés
+  - Médecins non conventionnés
+  - Laboratoires
+  - Pharmacies
 
-## License
+- ⚡ **Recherche instantanée (Live Search)**  
+  développée avec **Alpine.js**
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+  Permet de filtrer les médecins par :
+
+  - Nom
+  - Spécialité
+
+  👉 **Sans rechargement de page**
+
+---
+
+## 🛠 Back-Office (Espace Administrateur)
+
+Panel d'administration complet basé sur **Filament PHP v3**.
+
+Fonctionnalités :
+
+- 🔐 Interface **sécurisée**
+- 🇫🇷 Interface **100% traduite en français**
+- 🗂 Gestion complète des prestataires de santé
+
+CRUD complet :
+
+- ➕ Créer
+- 👁 Lire
+- ✏ Modifier
+- ❌ Supprimer
+
+pour les catégories suivantes :
+
+- Cliniques
+- Médecins conventionnés
+- Médecins non conventionnés
+- Laboratoires
+- Pharmacies
+
+📂 Gestion des documents administratifs :
+
+- Upload sécurisé
+- Stockage Laravel
+- Génération de **liens symboliques**
+
+```bash
+php artisan storage:link
+````
+
+---
+
+# 🧰 Technologies utilisées
+
+## Backend
+
+* ⚙ **Laravel (PHP)**
+
+## Admin Panel
+
+* 🧩 **Filament PHP v3**
+
+## Frontend
+
+* 🎨 **Laravel Blade**
+* 💨 **Tailwind CSS**
+* ⚡ **Alpine.js**
+
+## Base de données
+
+* 🗄 **MySQL**
+
+## Environnement de développement
+
+* 🖥 **Laragon**
+* 💻 **Windows**
+
+---
+
+# ⚙ Installation en local
+
+Suivez les étapes suivantes pour exécuter le projet en local.
+
+---
+
+## 1️⃣ Cloner le projet
+
+```bash
+git clone https://github.com/jbira01/SRM-CS-Portail-DOCS-Sante.git
+```
+
+Entrer dans le dossier :
+
+```bash
+cd SRM-CS-Portail-DOCS-Sante
+```
+
+---
+
+## 2️⃣ Installer les dépendances
+
+```bash
+composer install
+```
+
+---
+
+## 3️⃣ Créer le fichier d'environnement
+
+```bash
+cp .env.example .env
+```
+
+---
+
+## 4️⃣ Générer la clé Laravel
+
+```bash
+php artisan key:generate
+```
+
+---
+
+## 5️⃣ Configurer la base de données
+
+Modifier le fichier **.env**
+
+```env
+DB_DATABASE=nom_de_la_base
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+Créer la base de données dans **MySQL**.
+
+---
+
+## 6️⃣ Exécuter les migrations
+
+```bash
+php artisan migrate
+```
+
+---
+
+## 7️⃣ Créer le lien de stockage
+
+```bash
+php artisan storage:link
+```
+
+---
+
+## 8️⃣ Lancer le serveur
+
+```bash
+php artisan serve
+```
+
+Le projet sera accessible sur :
+
+```
+http://127.0.0.1:8000
+```
+
+---
+
+## 9️⃣ Créer un compte administrateur Filament
+
+```bash
+php artisan make:filament-user
+```
+
+Puis accéder à l'administration :
+
+```
+http://127.0.0.1:8000/admin
+```
+
+---
+
+# 👨‍💻 Auteurs
+
+Projet développé par :
+
+**Yasser Jabir**
+Étudiant en **2ème année Développement Digital Full-Stack**
+OFPPT
+
+**Haiba Housny**
+
+Étudiante en **2ème année Développement Digital Full-Stack**
+OFPPT
+
+**SRM Casablanca-Settat**
+
+---
+
+# 📄 Licence
+
+Projet réalisé dans un cadre **académique et professionnel (stage)**.
+Tous droits réservés à **SRM Casablanca-Settat**.
+
+```
+
+
